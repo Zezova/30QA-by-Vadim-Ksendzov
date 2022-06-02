@@ -1,0 +1,33 @@
+﻿$ touch myscript.txt
+
+User@Zezova MINGW64 /e/ZEZOVA/QA/GIT
+$ vim myscript.txt
+
+User@Zezova MINGW64 /e/ZEZOVA/QA/GIT
+$ chmod +x ./myscript.txt
+
+User@Zezova MINGW64 /e/ZEZOVA/QA/GIT
+$ ./myscript.txt
+total 4
+drwxr-xr-x 1 User 197121 0 May 29 23:55 .
+drwxr-xr-x 1 User 197121 0 May 29 23:55 ..
+-rw-r--r-- 1 User 197121 0 May 29 23:55 five.json
+-rw-r--r-- 1 User 197121 0 May 29 23:55 four.json
+drwxr-xr-x 1 User 197121 0 May 29 23:55 one
+-rw-r--r-- 1 User 197121 0 May 29 23:55 one.txt
+drwxr-xr-x 1 User 197121 0 May 29 23:55 three
+-rw-r--r-- 1 User 197121 0 May 29 23:55 three.txt
+drwxr-xr-x 1 User 197121 0 May 29 23:55 two
+-rw-r--r-- 1 User 197121 0 May 29 23:55 two.txt
+__________________________________________________
+файл myscript.txt:
+#!/bin/bash
+cd 30QAfree
+mkdir freefolder1 freefolder2 freefolder3
+cd freefolder1
+touch one.txt two.txt three.txt four.json five.json
+mkdir one two three
+ls -la
+mv one.txt one
+mv two.txt two
+
